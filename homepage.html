@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home page</title>
+	<style type="text/css">
+        html {
+            background-color: #88b63e;
+            background-image: linear-gradient(to bottom,#88b63e,#FFF);
+            height:100%;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #FFF;
+            height:97%;
+            max-width: 1020px;
+            border-radius: 10px;
+            padding: 10px;
+            margin: auto;
+            margin-top: 1%;
+            box-sizing: border-box;
+        }
+       
+
+        /* header of site */
+        header li {
+            list-style: none;
+        float: right;
+        margin-right: 10px;
+        }
+
+        header li a {
+            display: block;
+            color: #88b63e;
+            border:3px solid #88b63e;
+            width: 110px;
+            height: 40px;
+            padding-top: 9px;
+            border-radius: 10px;
+            font-family: 'Droid Serif', serif;
+            font-size: 85%;
+            text-align: center;
+            box-sizing: border-box;
+            text-decoration: none; 
+            transition: all 0.5s;
+        }
+        header li a:hover{
+            color: #FFF;
+            background-color: #88b63e;
+        }
+        header img {
+            float: left;
+        }
+        /* end of header of site */
+
+        .image {
+            width: 33%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+            float: left;
+        }
+        .image2 {
+            width: 32%;
+            height: 10%;
+            border-radius: 10px;
+            margin-top: 6%;
+            margin-left: 1%;
+            float: left;
+        }
+        .donationbt {
+            display: block;
+            color: #88b63e;
+            border:3px solid #88b63e;
+            width: 32%;
+            height: 10%;
+            padding: 1%;
+            margin-left: 34%;
+            margin-top: 16%;
+            font-size: 125%;
+            border-radius: 10px;
+            font-family: 'Droid Serif', serif;
+            text-align: center;
+            box-sizing: border-box;
+            text-decoration: none;
+            transition: all 0.5s;
+        }
+        .donationbt:hover{
+            color: #FFF;
+            background-color: #88b63e;
+        }
+
+        .login-form {
+            border: 1px solid #88b63e;
+            font-family: 'Droid Serif', serif;
+            color: #88b63e;
+            border-radius: 10px;
+            padding:1%;
+            margin-left: 67%;
+            margin-top: -25%;
+            min-height: 20%;
+            float: right;
+        }
+        .login-form select {
+            width: 99%;
+            height: 30px;
+            font-family: 'Droid Serif', serif;
+            font-size: 110%;
+            color: #88b63e;
+            margin-top: 3%;
+            margin-bottom: 3%;
+            border:1px solid #88b63e;
+            align-self: center;
+        }
+        .login-form label {
+            font-family: 'Droid Serif', serif;
+            font-weight: bold;
+            font-size: 125%;
+        }
+        .login-form input[type="email"],
+        .login-form input[type="password"] {
+             font-family: 'Droid Serif', serif;
+             font-size:85%;
+        }
+        .box {
+            width: 99%;
+            height: 25px;
+            margin-top: 3%;
+            margin-bottom: 3%;
+            border-radius: 5px;
+            border:1px solid #88b63e;
+        }
+        .submit {
+            width: 30%;
+            height: 25px;
+            font-size: 100%;
+            background-color: #88b63e;
+            border:1px solid #88b63e;
+            border-radius: 5px;
+            font-family: 'Droid Serif', serif;
+            color: #FFF;
+        }
+         @media screen and (max-width: 840px){
+            .image,.image2,.login-form,.donationbt{
+                float:none;
+                width: 100%;
+                margin-left:0;
+                margin-top:5px;
+            }
+            .image {
+                width: 49%;
+                height:auto;
+                min-height:250px;
+                max-height:250px;
+                float:left;
+            }
+
+            .image2,.donationbt{
+                width:80%;
+                margin-left:10%;
+            }
+            body {
+                height:100%;
+            }
+            .main {
+                position:relative;
+            }
+            .login-form {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width:49%;
+                height:250px;
+                float:right;
+	            box-sizing: border-box;
+                vertical-align: middle;
+            }
+        }
+
+        .group:before,
+        .group:after {
+        content: "";
+        display: table;
+        }
+
+        .group:after {
+        clear: both;
+        }
+
+        .group {
+        zoom: 1;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+	<header class="group">	
+		<a href="homepage">
+			<img src="https://i.ibb.co/z8qTBSM/Whats-App-Image-2021-03-04-at-11-41-04.jpg" alt="Logo" class="logo"></a>
+		<nav class="site-nav">
+			<ul>
+				<li><a href="contact">Contact us</a></li>
+				<li><a href="about">About us</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="main group">
+		<img src="https://i.ibb.co/HpyNk5j/2.webp" class="image">
+
+		<div class="donate group">
+			<img src="https://i.ibb.co/C8NLCJ7/1.jpg" class="image2">
+			<a href="projects" class="donationbt">Donate</a>
+		</div>
+
+		<form class="login-form group">
+			<select>
+				<option value="">Sign in as ...</option>
+				<option value="Member">Member</option>
+				<option value="Organization">Organization</option>
+			</select>
+			<label>Email Address:
+				<input type="Email" name="email" class="box" placeholder="Email">
+			</label>
+			<label>Password:
+				<input type="Password" name="password" class="box" placeholder="Password">
+			</label>
+			<input type="submit" name="login" value="Login" class="submit">
+			<a href="#" class="link-2">Forgot Password</a>
+			<a href="#" class="link">Register!</a>
+		</form>
+	</div>
+
+</body>
+
+</html>
